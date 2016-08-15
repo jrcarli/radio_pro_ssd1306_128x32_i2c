@@ -1,11 +1,11 @@
 # Arduino Pro Micro 3.3V FM Radio
 This code supports an FM radio built on the following components:
 * Arduino Pro Micro 3.3V
-** <https://www.sparkfun.com/products/12587>
+  * <https://www.sparkfun.com/products/12587>
 * Si4703 FM Tuner Evaluation Board
-** <https://www.sparkfun.com/products/12938>
+  * <https://www.sparkfun.com/products/12938>
 * 128x32 I2C OLED Graphic Display based on SSD1306 Driver
-** <https://www.adafruit.com/products/931>
+  * <https://www.adafruit.com/products/931>
 
 ## Controls
 I used 10k potentiometers, connected to Pro Micro ADC inputs,
