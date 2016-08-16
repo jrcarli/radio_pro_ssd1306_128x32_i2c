@@ -149,17 +149,23 @@ int getPosition(int pin, int positions) {
 }
 
 void updateChannel() {  
+  int lastChannel = channel;  
   int msb = getPosition(coarseChannelPin,20);  
   int lsb = getPosition(fineChannelPin,5);
     
   channelIndex = (msb * 5) + lsb;
   channel = channels[channelIndex];
-  radio.setChannel(channel);  
+  if(channel!=lastChannel) {
+    radio.setChannel(channel);  
+  }
 }
 
 void updateVolume() {  
+  int lastVolume = volume;
   volume = getPosition(volumePin,16);  
-  radio.setVolume(volume);
+  if(volume!=lastVolume) {
+    radio.setVolume(volume);
+  }  
 }
 
 void updateDisplay() {

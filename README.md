@@ -8,7 +8,7 @@ This code supports an FM radio built on the following components:
   * <https://www.adafruit.com/products/931>
 
 ## Controls
-I used 10k potentiometers, connected to Pro Micro ADC inputs,
+I used three 10k potentiometers, connected to Pro Micro ADC inputs,
 to control the channel and volume.
 
 Traditional FM radio supports 100 stations (at least in the United States).
